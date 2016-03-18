@@ -230,25 +230,12 @@ function create_config( )
     sudo_users = {62834077,167268835,164100672},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[avast v5 - 
-An advance Administration bot based on avast!
+    about_text = [[
+BHH bot , an advance anti spam bot made by BHH team
+                   🌟SUDO🌟
+⭐@hacker44⭐ ==> 
+⭐@Xx_minister_salib_xX⭐ ==> ✟Åℳїℜ✟sÅłiß✟
 
-
-
-Our team!
-Arash avast
-Pouya avast
-Silent avast
-Raha avast
-Koohsar avast
-
-Special thanks to:
-iliya vortex
-amirhossien psg
-
-
-Our channels:
-https://telegram.me/avast_team
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -323,7 +310,7 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-____________________________________________
+__________________________________________
                     🔸🔶BHH bot tools🔶🔸
 
                     🔹🔷Hammer tools🔷🔹
@@ -352,7 +339,7 @@ ____________________________________________
 
 لیست افراد بن شده از گروه
 
-                     🔹🔷group mods🔷🔹
+                      🔹🔷group mods🔷🔹
 
 !owner
 
@@ -435,10 +422,60 @@ ____________________________________________
 
 دریافت لینک گروه
 
+!linkpv
+
+دریافت لینک گروه به صورت شخصی 
+
 !newlink
 
 ساخت لینک جدید برای گروه
-____________________________________________
+
+                         🔹🔷funtime🔷🔹
+
+!src [متن مورد نظر]
+
+سرچ کردن در گوگل
+
+!voice [متن مورد نظر]
+
+ربات متن مورد نظر را میخواند
+
+!webshot [https://لینک سایت مورد نظر]
+
+ربات از صفحه ی سایت مورد نظر عکس میگیرد
+
+!time [کشور مورد نظر]
+
+گرفتن ساعت کشور مورد نظر
+
+!weather [کشور مورد نظر]
+
+گرفتن آب و هوای کشور مورد نظر
+
+!tex [متن مورد نظر]
+
+تبدیل متن مورد نظر به عکس نوشته
+
+!loc [کشور مورد نظر]
+
+دریافت اطلاعات در مورد کسور مورد نظر
+
+!bhh
+خودتان امتحان کنید!
+
+                         🔹🔷support🔷🔹
+
+!addsudo1
+
+اد کردن سودو اول به گروه در صورت بروز مشکل
+!addsudo2
+
+اد کردن سودو دوم به گروه در صورت بروز مشکل
+
+لینک گروه ساپورت
+https://telegram.me/joinchat/C9SSWgg-sVoLYRaRnc7QmQ
+_____________________________________________
+
 ]]
   }
   serialize_to_file(config, './data/config.lua')
