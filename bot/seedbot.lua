@@ -323,109 +323,122 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-Commands list :
+____________________________________________
+                    🔸🔶BHH bot tools🔶🔸
 
-!kick [username|id]
-You can also do it by reply
+                    🔹🔷Hammer tools🔷🔹
 
-!ban [ username|id]
-You can also do it by reply
+!kick[id/reply/username]
 
-!unban [id]
-You can also do it by reply
+حذف کردن فرد مورد نظر از گروه
 
-!who
-Members list
+!ban[id/reply/username]
 
-!modlist
-Moderators list
+حذف کردن فرد مورد نظر از گروه و حذف کردن آن در صورت جوین شدن دوباره
 
-!promote [username]
-Promote someone
+!unban[id/username]
 
-!demote [username]
-Demote someone
+حذف کردن بن فرد بن شده برای جوین دادن مجدد در گروه
 
-!kickme
-Will kick user
+!banall[id/reply/username]
 
-!about
-Group description
+بن کردن فرد از تمام گروه ها
 
-!setphoto
-Set and locks group photo
+!unbanall[id/username]
 
-!setname [name]
-Set group name
+حذف کردن بن فرد مورد نظر از تمام گروه ها
 
-!rules
-Group rules
+!banlist 
 
-!id
-Return group id or user id
+لیست افراد بن شده از گروه
 
-!help
-Get commands list
-
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
-
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
-!set rules [text]
-Set [text] as rules
-
-!set about [text]
-Set [text] as about
-
-!settings
-Returns group settings
-
-!newlink
-Create/revoke your group link
-
-!link
-Returns group link
+                     🔹🔷group mods🔷🔹
 
 !owner
-Returns group owner id
 
-!setowner [id]
-Will set id as owner
+ایدی مدیر ربات در گروه 
 
-!setflood [value]
-Set [value] as flood sensitivity
+!setowner [reply/id/username]
 
-!stats
-Simple message statistics
+تنظیم مدیر ربات در گروه
 
-!save [value] [text]
-Save [text] as [value]
+!modlist
 
-!get [value]
-Returns text of [value]
+لیست کمک مدیر ها
 
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+!promote[id/reply/username]
 
-!res [username]
-Returns user id
+اضافه کردن فرد مورد نظر به کمک مدیر ها
 
-!log
-Will return group logs
+!demote[id/reply/username]
 
-!banlist
-Will return group ban list
+حذف کردن فرد مورد نظر از کمک مدیر ها
 
-» U can use both "/" and "!" 
+                    🔹🔷Group manager🔷🔹
+!who
 
-» Only mods, owner and admin can add bots in group
+لیست تمام عضو های گروه
 
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+!kickme
 
-» Only owner can use res,setowner,promote,demote and log commands
+شما را از گروه حذف میکند
 
+!about
+
+توضیحات گروه را نشان میدهد
+
+!set about [توضیحات گروه]
+
+تنظیم توضیحات گروه
+
+!setname [نام جدید گروه]
+
+تنظیم نام گروه
+
+!setphoto
+
+تنظیم عکس گروه*پس از ارسال این دستور عکس مورد نظر را ارسال نمایید*
+
+!rules
+
+نشان دادن قوانین گروه
+
+!set rules [قوانین جدید]
+
+تنظیم قوانین جدید گروه
+
+!setflood [5~20]
+
+تنظیم حساسیت اسپم از 5 پیام تا 20 پیام
+
+!id
+
+نشان دادن ایدی گروه
+
+!id[reply]
+
+نشان دادن ایدی فرد مورد نظر
+
+!settings
+
+نمایش تنظیمات گروه
+
+!lock [name/photo/tag/member/english/leave/badw/adds/join/sticker/bots]
+
+قفل کردن موارد موجود
+
+!unlock [name/photo/tag/member/english/leave/badw/adds/join/sticker/bots]
+
+باز کردن موارد موجود
+
+!link
+
+دریافت لینک گروه
+
+!newlink
+
+ساخت لینک جدید برای گروه
+____________________________________________
 ]]
   }
   serialize_to_file(config, './data/config.lua')
