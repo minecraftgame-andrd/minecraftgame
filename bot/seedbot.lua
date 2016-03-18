@@ -225,9 +225,9 @@ function create_config( )
     "all",
     "leave_ban",
     "admin",
-    "mame"
+    "pls"
     },
-    sudo_users = {164985762},--Sudo users
+    sudo_users = {62834077,167268835,164100672},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[avast v5 - 
