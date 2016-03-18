@@ -233,7 +233,7 @@ function create_config( )
     about_text = [[
 BHH bot , an advance anti spam bot made by BHH team
                    🌟SUDO🌟
-⭐@hacker44⭐ ==> 
+⭐@hacker44⭐ ==> ⇝HÅcKεℜ 44⇜
 ⭐@Xx_minister_salib_xX⭐ ==> ✟Åℳїℜ✟sÅłiß✟
 
 ]],
@@ -315,166 +315,168 @@ __________________________________________
 
                     🔹🔷Hammer tools🔷🔹
 
-!kick[id/reply/username]
+ !kick[id/reply/username]
 
 حذف کردن فرد مورد نظر از گروه
 
-!ban[id/reply/username]
+ !ban[id/reply/username]
 
 حذف کردن فرد مورد نظر از گروه و حذف کردن آن در صورت جوین شدن دوباره
 
-!unban[id/username]
+ !unban[id/username]
 
 حذف کردن بن فرد بن شده برای جوین دادن مجدد در گروه
 
-!banall[id/reply/username]
+ !banall[id/reply/username]
 
 بن کردن فرد از تمام گروه ها
 
-!unbanall[id/username]
+ !unbanall[id/username]
 
 حذف کردن بن فرد مورد نظر از تمام گروه ها
 
-!banlist 
+ !banlist 
 
 لیست افراد بن شده از گروه
 
                       🔹🔷group mods🔷🔹
 
-!owner
+ !owner
 
 ایدی مدیر ربات در گروه 
 
-!setowner [reply/id/username]
+ !setowner [reply/id/username]
 
 تنظیم مدیر ربات در گروه
 
-!modlist
+ !modlist
 
 لیست کمک مدیر ها
 
-!promote[id/reply/username]
+ !promote[id/reply/username]
 
 اضافه کردن فرد مورد نظر به کمک مدیر ها
 
-!demote[id/reply/username]
+ !demote[id/reply/username]
 
 حذف کردن فرد مورد نظر از کمک مدیر ها
 
                     🔹🔷Group manager🔷🔹
-!who
+ !who
 
 لیست تمام عضو های گروه
 
-!kickme
+ !kickme
 
 شما را از گروه حذف میکند
 
-!about
+ !about
 
 توضیحات گروه را نشان میدهد
 
-!set about [توضیحات گروه]
+ !set about [توضیحات گروه]
 
 تنظیم توضیحات گروه
 
-!setname [نام جدید گروه]
+ !setname [نام جدید گروه]
 
 تنظیم نام گروه
 
-!setphoto
+ !setphoto
 
 تنظیم عکس گروه*پس از ارسال این دستور عکس مورد نظر را ارسال نمایید*
 
-!rules
+ !rules
 
 نشان دادن قوانین گروه
 
-!set rules [قوانین جدید]
+ !set rules [قوانین جدید]
 
 تنظیم قوانین جدید گروه
 
-!setflood [5~20]
+ !setflood [5~20]
 
 تنظیم حساسیت اسپم از 5 پیام تا 20 پیام
 
-!id
+ !id
 
 نشان دادن ایدی گروه
 
-!id[reply]
+ !id[reply]
 
 نشان دادن ایدی فرد مورد نظر
+!info
 
-!settings
+نمایش اطلاعات تلگرامی شما
+ !settings
 
 نمایش تنظیمات گروه
 
-!lock [name/photo/tag/member/english/leave/badw/adds/join/sticker/bots]
+ !lock [name/photo/tag/member/english/     leave/badw/adds/join/sticker/bots]
 
 قفل کردن موارد موجود
 
-!unlock [name/photo/tag/member/english/leave/badw/adds/join/sticker/bots]
+ !unlock [name/photo/tag/member/english/  leave/badw/adds/join/sticker/bots]
 
 باز کردن موارد موجود
 
-!link
+ !link
 
 دریافت لینک گروه
 
-!linkpv
+ !linkpv
 
 دریافت لینک گروه به صورت شخصی 
 
-!newlink
+ !newlink
 
 ساخت لینک جدید برای گروه
 
                          🔹🔷funtime🔷🔹
 
-!src [متن مورد نظر]
+ !src [متن مورد نظر]
 
 سرچ کردن در گوگل
 
-!voice [متن مورد نظر]
+ !voice [متن مورد نظر]
 
 ربات متن مورد نظر را میخواند
 
-!webshot [https://لینک سایت مورد نظر]
+ !webshot [https://لینک سایت مورد نظر]
 
 ربات از صفحه ی سایت مورد نظر عکس میگیرد
 
-!time [کشور مورد نظر]
+ !time [کشور مورد نظر]
 
 گرفتن ساعت کشور مورد نظر
 
-!weather [کشور مورد نظر]
+ !weather [کشور مورد نظر]
 
 گرفتن آب و هوای کشور مورد نظر
 
-!tex [متن مورد نظر]
+ !tex [متن مورد نظر]
 
 تبدیل متن مورد نظر به عکس نوشته
 
-!loc [کشور مورد نظر]
+ !loc [کشور مورد نظر]
 
 دریافت اطلاعات در مورد کسور مورد نظر
 
-!bhh
+ !bhh
 خودتان امتحان کنید!
 
                          🔹🔷support🔷🔹
 
-!addsudo1
+ !addsudo1
 
 اد کردن سودو اول به گروه در صورت بروز مشکل
-!addsudo2
+ !addsudo2
 
 اد کردن سودو دوم به گروه در صورت بروز مشکل
 
 لینک گروه ساپورت
-https://telegram.me/joinchat/C9SSWgg-sVoLYRaRnc7QmQ
-_____________________________________________
+ https://telegram.me/joinchat/C9SSWgg-sVoLYRaRnc7QmQ
+____________________________________________
 
 ]]
   }
