@@ -8,7 +8,7 @@ return {
   description = "", 
   usage = "",
   patterns = {
-    "^[!/#]info$",
+    "^[!/#]id$",
   },
   run = run
 }
