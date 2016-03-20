@@ -6,7 +6,7 @@ return 'No links here!'
 end 
 return {patterns = {
 ".com",
-"http://",
-"https://",
+"[Hh][Tt][Tt][Pp][:][/][/]",
+"[Hh][Tt][Tt][Pp][Ss][:][/][/]",
 "adf.ly"
 }, run = run}
