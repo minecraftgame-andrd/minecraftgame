@@ -413,11 +413,11 @@ __________________________________________
 
 نمایش تنظیمات گروه
 
- !lock [name/photo/tag/member/english/     leave/badw/adds/join/sticker/bots]
+ !lock [name/tag/member/english/     leave/badw/adds/join/sticker/bots]
 
 قفل کردن موارد موجود
 
- !unlock [name/photo/tag/member/english/  leave/badw/adds/join/sticker/bots]
+ !unlock [name/tag/member/english/  leave/badw/adds/join/sticker/bots]
 
 باز کردن موارد موجود
 
@@ -475,9 +475,10 @@ __________________________________________
 
 اد کردن سودو دوم به گروه در صورت بروز مشکل
 
-لینک گروه ساپورت
- https://telegram.me/joinchat/C9SSWgg-sVoLYRaRnc7QmQ
-__________________________________________
+برای جوین شدن به گروه ساپورت میتوانید از دستورات زیر استفاده نمایید
+
+!tosupport   !joinsupport   !support
+_______________________________________
 
 ]]
   }
