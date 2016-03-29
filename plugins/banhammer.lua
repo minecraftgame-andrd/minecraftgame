@@ -190,7 +190,7 @@ local function run(msg, matches)
   end
 
 
-  if matches[1]:lower() == 'unban' then -- /unban 
+  if matches[1]:lower() == 'unsik' then -- /unsik 
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       local msgr = get_message(msg.reply_id,unban_by_reply, false)
     end
@@ -216,7 +216,7 @@ local function run(msg, matches)
 	end
  end
 
-if matches[1]:lower() == 'kick' then
+if matches[1]:lower() == 'sik' then
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       if is_admin(msg) then
         local msgr = get_message(msg.reply_id,Kick_by_reply_admins, false)
@@ -257,7 +257,7 @@ end
     return
   end
 
-  if matches[1]:lower() == 'banall' then -- Global ban
+  if matches[1]:lower() == 'supersik' then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin(msg) then
       return get_message(msg.reply_id,banall_by_reply, false)
     end
@@ -281,7 +281,7 @@ end
 		res_user(username, kick_ban_res, cbres_extra)
       	end
   end
-  if matches[1]:lower() == 'unbanall' then -- Global unban
+  if matches[1]:lower() == 'unsupersik' then -- Global unban
     local user_id = matches[2]
     local chat_id = msg.to.id
       if string.match(matches[2], '^%d+$') then
@@ -301,27 +301,27 @@ end
 		res_user(username, kick_ban_res, cbres_extra)
       end
   end
-  if matches[1]:lower() == "gbanlist" then -- Global ban list
+  if matches[1]:lower() == "supersiklist" then -- Global ban list
     return banall_list()
   end
 end
 
 return {
   patterns = {
-    "^[!/]([Bb]anall) (.*)$",
-    "^[!/]([Bb]anall)$",
-    "^[!/]([Bb]anlist) (.*)$",
-    "^[!/]([Bb]anlist)$",
-    "^[!/]([Gg]banlist)$",
-    "^[!/]([Bb]an) (.*)$",
+    "^[!/]([Ss]upersik) (.*)$",
+    "^[!/]([Ss]upersik)$",
+    "^[!/]([Ss]iklist) (.*)$",
+    "^[!/]([Ss]iklist)$",
+    "^[!/]([Ss]upersiklist)$",
+    "^[!/]([Ss]ik) (.*)$",
     "^[!/]([Kk]ick)$",
-    "^[!/]([Uu]nban) (.*)$",
-    "^[!/]([Uu]nbanall) (.*)$",
-    "^[!/]([Uu]nbanall)$",
+    "^[!/]([Uu]nsik) (.*)$",
+    "^[!/]([Uu]nsupersik) (.*)$",
+    "^[!/]([Uu]nsupersik)$",
     "^[!/]([Kk]ick) (.*)$",
     "^[!/]([Kk]ickme)$",
-    "^[!/]([Bb]an)$",
-    "^[!/]([Uu]nban)$",
+    "^[!/]([Ss]ik)$",
+    "^[!/]([Uu]nsik)$",
     "^[!/]([Ii]d)$",
     "^!!tgservice (.+)$"
   },
