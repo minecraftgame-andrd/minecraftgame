@@ -1,30 +1,46 @@
-local function run(msg, matches)
-    if is_owner(msg) then
-        return
+local function kick_user(user_id, chat_id)
+  local chat = 'chat#id'..chat_id
+  local user = 'user#id'..user_id
+  chat_del_user(chat, user, function (data, success, result)
+    if success ~= 1 then
+      send_msg(data.chat, 'Error while kicking user', ok_cb, nil)
     end
-    local data = load_data(_config.moderation.data)
-    if data[tostring(msg.to.id)] then
-        if data[tostring(msg.to.id)]['settings'] then
-            if data[tostring(msg.to.id)]['settings']['lock_ads'] then
-                lock_ads = data[tostring(msg.to.id)]['settings']['lock_ads']
-            end
-        end
-    end
-    local chat = get_receiver(msg)
-    local user = "user#id"..msg.from.id
-    if lock_ads == "yes" then
-        send_large_msg(chat, 'Ø§Ø±Ø³Ø§Ù„ Ù„ÛŒÙ†Ú© ØºÛŒØ± Ù…Ø¬Ø§Ø² Ù‡Ø³Øª ðŸš¨ðŸš¨ðŸš¨')
-        chat_del_user(chat, user, ok_cb, true)
-    end
+  end, {chat=chat, user=user})
 end
- 
-return {patterns = {
+
+local function run (msg, matches)
+  local user = msg.from.id
+  local chat = msg.to.id
+
+  if msg.to.type ~= 'chat' then
+    return "Not a chat group!"
+  elseif user == tostring(our_id) then
+    --[[ A robot must protect its own existence as long as such protection does
+    not conflict with the First or Second Laws. ]]--
+    return ""
+  elseif is_sudo(msg) then
+    return ""
+  else
+    kick_user(user, chat)
+  end
+end
+
+return {
+  description = "Bot kicks user",
+  usage = {
+    "!kickme"
+  },
+  patterns = {
 "[Hh][Tt][Tt][Pp][Ss]://[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/",
 "[Hh][Tt][Tt][Pp][Ss]://[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]",
 "[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/",
 "[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/",
 "[Hh][Tt][Tt][Pp]://",
-"[Ww][Ww][Ww]:",
+"[Ww][Ww][Ww]",
+".[Ii][Rr]",
+".[Cc][Oo][Mm]",
+"[Hh][Tt][Tt][Pp]://",
+"[Hh][Tt][Tt][Pp][Ss]://"
   },
   run = run
 }
